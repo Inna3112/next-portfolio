@@ -4,7 +4,6 @@ import Footer from './footer/Footer';
 import styles from './sass/Layout.module.scss';
 
 function Layout({ children }) {
-
   return (
     <div className={styles.container}>
       <Head>

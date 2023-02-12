@@ -1,0 +1,17 @@
+@import "../../../pages/App/sass/variables";
+@import "../../../pages/App/sass/mixins";
+
+.header {
+  min-height: 80px;
+  background-color: $bgSecondColor;
+  position: relative;
+
+  .fixed {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background-color: $bgSecondColor;
+    z-index: 10;
+  }
+}
+

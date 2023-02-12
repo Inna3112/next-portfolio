@@ -1,0 +1,33 @@
+@import "../../../pages/App/sass/variables";
+@import "../../../pages/App/sass/mixins";
+
+.project {
+  width: 350px;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #fcfafa;
+  margin-bottom: 20px;
+  .img {
+    @include flex(center, center);
+    width: 150px;
+    height: 150px;
+    background-color: #77779a;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: '';
+      background-color: black;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0.4;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+@import "../../../pages/App/sass/variables";
+@import "../../../pages/App/sass/mixins";
+
+.mainBlock {
+  min-height: 100vh;
+  background-color: $bgColor;
+  @include flex(center, center);
+  //&::before {
+  //  position: absolute;
+  //  content: '';
+  //  background-color: black;
+  //  top: 0;
+  //  bottom: -80px;
+  //  left: 0;
+  //  right: 0;
+  //  opacity: 0.2;
+  //}
+  .greeting {
+    width: 350px;
+    color: $textColor;
+
+    & h6 {
+      font-size: 25px;
+      margin-bottom: 15px;
+    }
+
+    & h1 {
+      margin: 0;
+      font-size: 60px;
+      line-height: 1.2;
+      letter-spacing: 5px;
+    }
+
+    & span {
+      div {
+        @include typingEffect
+      }
+
+      span {
+        @include typingEffect
+      }
+    }
+
+
+    @media screen and (max-width: 425px) {
+      letter-spacing: 0;
+    }
+  }
+
+  .photo {
+    width: 300px;
+    height: 420px;
+    background-color: #e3dcdc;
+  }
+}

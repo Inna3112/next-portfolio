@@ -1,0 +1,29 @@
+@import "../../../pages/App/sass/variables";
+@import "../../../pages/App/sass/mixins";
+
+.nav {
+  @include flex(space-between, flex-end);
+  width: 500px;
+
+  & span{
+    padding: 20px;
+  }
+  & a {
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #1c1d24;
+    cursor: pointer;
+
+    &:hover {
+      color: $bgColor;
+    }
+
+    &.active {
+      color: $bgColor;
+    }
+  }
+  @media screen and (max-width: 850px){
+    display: none;
+  }
+}

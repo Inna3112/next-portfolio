@@ -1,0 +1,27 @@
+@import "../../pages/App/sass/variables";
+
+.button {
+  position: relative;
+  font-size: 16px;
+  color: #fcfafa;
+  letter-spacing: 1px;
+  padding: 0 25px;
+  z-index: 1;
+  background-color: $bgColor;
+  border: none;
+  line-height: 46px;
+  display: inline-block;
+  font-weight: 600;
+  text-decoration: none !important;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
+  cursor: pointer;
+
+  &:hover {
+    background-color: $textColor;
+  }
+  &:disabled {
+    background-color: #e3dcdc;
+  }
+}
+

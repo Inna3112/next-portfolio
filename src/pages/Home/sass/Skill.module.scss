@@ -1,0 +1,28 @@
+@import "../../../pages/App/sass/variables";
+@import "../../../pages/App/sass/mixins";
+
+.skill {
+  @include flex(space-between, center);
+  width: 250px;
+  min-height: 180px;
+  position: relative;
+  flex-direction: column;
+  text-align: center;
+  margin: 10px;
+
+  &::before {
+    position: absolute;
+    content: '';
+    background-color: $bgColor;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.4;
+  }
+
+  & img {
+    width: 60px;
+    height: 60px;
+  }
+}

@@ -1,0 +1,29 @@
+@import "../../pages/App/sass/variables";
+
+.title {
+    margin: 0 0 30px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 45px;
+    font-weight: 800;
+    color: $textColor;
+    text-transform: capitalize;
+    line-height: 1.2;
+    letter-spacing: 5px;
+    position: relative;
+    .title h2 {
+        margin: 0;
+    }
+    /*псевлоэлемент*/
+    &::before{
+        content: "";
+        background: $bgColor;
+        width: 55px;
+        height: 1px;
+        position: absolute;
+        bottom: -30px;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+}
+
+

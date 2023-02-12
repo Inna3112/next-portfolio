@@ -9,6 +9,7 @@ function Layout({ children }) {
       <Head>
         <title>Portfolio</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="google-site-verification" content="FD-gBKi1RIwrrlyBb4vNBCxsar5YYbLkjn_bz3HBF-A" />
       </Head>
       <main className={styles.main}>
         {children}

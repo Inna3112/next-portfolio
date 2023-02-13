@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import Image from 'next/image';
 import s from '../sass/Skill.module.scss';
 import DescribeBlock from '../../../components/DescribeBlock/DescribeBlock';
 
@@ -7,7 +8,12 @@ function Skill({
 }) {
   return (
     <div className={s.skill}>
-      <img src={icon} alt={imgAlt} />
+      <Image
+        width={60}
+        height={60}
+        src={icon}
+        alt={imgAlt}
+      />
       <DescribeBlock title={title} description={description} />
     </div>
   );

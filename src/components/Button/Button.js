@@ -9,7 +9,7 @@ function Button({ title, href, projectId }) {
       href={href}
       target="_blank"
       rel="noreferrer"
-      // className={s.button}
+      className={s.button}
     >
       <span className={s.button}>{title}</span>
     </Link>

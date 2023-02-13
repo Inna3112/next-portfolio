@@ -5,10 +5,10 @@ import { navLinks } from '../../../mock/mock';
 function Nav() {
   return (
     <div className={s.nav}>
-      {navLinks.map(({ name, id }) => (
+      {navLinks.map(({ name, path }) => (
         <Link
-          key={id}
-          href={id}
+          key={name}
+          href={`${path}`}
         >
           <span>{name}</span>
         </Link>

@@ -29,25 +29,25 @@ export const state = {
       icon: browser,
       title: 'Foundations',
       description: 'JavaScript, TypeScript, HTML5, CSS3',
-      imgAlt: '',
+      imgAlt: 'Foundations',
     },
     {
       icon: rocket,
       title: 'Development',
       description: 'React, Redux, Redux-Thunk, Axios, Redux-toolkit',
-      imgAlt: '',
+      imgAlt: 'Development',
     },
     {
       icon: checklist,
       title: 'Testing',
       description: 'Unit Tests, SnapShot, Storybook',
-      imgAlt: '',
+      imgAlt: 'Testing',
     },
     {
       icon: pencil,
       title: 'Design',
       description: 'Material UI, Ant-Design ',
-      imgAlt: '',
+      imgAlt: 'Design',
     },
   ],
   projects: [
@@ -92,15 +92,15 @@ export const state = {
 };
 
 export const navLinks = [
-  { name: 'main', id: 'main' },
-  { name: 'skills', id: 'skills' },
-  { name: 'projects', id: 'projects' },
-  { name: 'contacts', id: 'contacts' }
+  { name: 'main', path: '/' },
+  { name: 'skills', path: '/skills' },
+  { name: 'projects', path: '/projects' },
+  { name: 'contacts', path: '/contacts' }
 ];
 
 export const burgerNavItems = [
-  { name: 'main', id: 'main' },
-  { name: 'skills', id: 'skills' },
-  { name: 'projects', id: 'projects' },
-  { name: 'contacts', id: 'contacts' }
+  { name: 'main', path: '/' },
+  { name: 'skills', path: '/skills' },
+  { name: 'projects', path: '/projects' },
+  { name: 'contacts', path: '/contacts' }
 ];

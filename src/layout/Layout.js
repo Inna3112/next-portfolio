@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import PropTypes from 'prop-types';
 import Footer from './footer/Footer';
+import Header from '../pages/Home/components/Header';
 import styles from './sass/Layout.module.scss';
 
 function Layout({ children }) {
@@ -12,9 +13,10 @@ function Layout({ children }) {
         <meta name="google-site-verification" content="FD-gBKi1RIwrrlyBb4vNBCxsar5YYbLkjn_bz3HBF-A" />
       </Head>
       <main className={styles.main}>
+        <Header />
         {children}
+        <Footer />
       </main>
-      <Footer />
     </div>
   );
 }

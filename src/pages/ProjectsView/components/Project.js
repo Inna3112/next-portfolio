@@ -20,7 +20,7 @@ Project.propTypes = {
   id: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  style: PropTypes.string.isRequired,
+  style: PropTypes.shape({}).isRequired,
   href: PropTypes.string.isRequired,
 };
 

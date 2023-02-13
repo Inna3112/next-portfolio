@@ -1,10 +1,10 @@
-import sContainer from '../../App/sass/Container.module.scss';
-import Title from '../../../components/Title/Title';
-import Project from './Project';
-import { state } from '../../../mock/mock';
-import s from '../sass/Projects.module.scss';
+import sContainer from '../App/sass/Container.module.scss';
+import Title from '../../components/Title/Title';
+import Project from './components/Project';
+import { state } from '../../mock/mock';
+import s from './sass/ProjectsView.module.scss';
 
-function Projects() {
+function ProjectsView() {
   return (
     <div id="projects" className={s.projectsBlock}>
       <div className={`${sContainer.container} ${s.projectsContainer}`}>
@@ -30,4 +30,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default ProjectsView;

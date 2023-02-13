@@ -1,14 +1,14 @@
-import { state } from '../../../mock/mock';
-import Title from '../../../components/Title/Title';
-import Skill from './Skill';
-import s from '../sass/Skills.module.scss';
-import sContainer from '../../App/sass/Container.module.scss';
+import { state } from '../../mock/mock';
+import Title from '../../components/Title/Title';
+import Skill from './components/Skill';
+import s from './sass/SkillsView.module.scss';
+import sContainer from '../App/sass/Container.module.scss';
 
-function Skills() {
+function SkillsView() {
   return (
     <div id="skills" className={s.skillsBlock}>
       <div className={`${sContainer.container} ${s.skillsContainer}`}>
-        <Title text="Skills" />
+        <Title text="SkillsView" />
         <div className={s.skills}>
           {state.skills.map(({
             title, description, icon, imgAlt
@@ -29,4 +29,4 @@ function Skills() {
   );
 }
 
-export default Skills;
+export default SkillsView;

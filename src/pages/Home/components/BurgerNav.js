@@ -13,10 +13,10 @@ function BurgerNav() {
   return (
     <div className={s.burgerNav}>
       <div className={!isOpen ? s.hide : s.burgerNavItems}>
-        {burgerNavItems.map((id, name) => (
+        {burgerNavItems.map(({ path, name }) => (
           <Link
-            key={id}
-            href={id}
+            key={name}
+            href={`${path}`}
           >
             <span>{name}</span>
           </Link>

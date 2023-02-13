@@ -1,7 +1,8 @@
+import Image from 'next/image';
 import s from '../sass/Main.module.scss';
 import sContainer from '../../App/sass/Container.module.scss';
 
-const mainPhoto = '';
+const mainPhoto = '/static/images/Pages/Home/photo.jpeg';
 
 function Main() {
   return (
@@ -12,7 +13,12 @@ function Main() {
           <h1>Inna Fomichova</h1>
         </div>
         <div className={s.photo}>
-          <img src={mainPhoto} alt="MainPhoto" />
+          <Image
+            src={mainPhoto}
+            width={300}
+            height={420}
+            alt="MainPhoto"
+          />
         </div>
       </div>
     </div>

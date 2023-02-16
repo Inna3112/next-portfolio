@@ -14,6 +14,22 @@ function Layout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="google-site-verification" content="FD-gBKi1RIwrrlyBb4vNBCxsar5YYbLkjn_bz3HBF-A" />
         <meta name="description" content="Portfolio of Inna Fomichova" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'LocalBusiness',
+              name: 'Inna Fomichova',
+              telephone: '+380978808048',
+              email: 'innula3113@gmail.com',
+              address: {
+                '@type': 'PostalAddress',
+                addressLocality: 'Kryvyi Rih, Ukraine'
+              }
+            })
+          }}
+        />
       </Head>
       <main className={styles.main}>
         <Header />

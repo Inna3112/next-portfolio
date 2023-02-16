@@ -17,7 +17,7 @@ function Main() {
             src={mainPhoto}
             width={300}
             height={420}
-            alt="MainPhoto"
+            alt="author"
           />
         </div>
       </div>

@@ -10,7 +10,10 @@ function Layout({ children }) {
       <Head>
         <title>Portfolio</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="google-site-verification" content="FD-gBKi1RIwrrlyBb4vNBCxsar5YYbLkjn_bz3HBF-A" />
+        <meta name="description" content="Portfolio of Inna Fomichova" />
       </Head>
       <main className={styles.main}>
         <Header />

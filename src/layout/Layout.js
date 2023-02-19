@@ -20,9 +20,9 @@ function Layout({ children }) {
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'LocalBusiness',
-              name: 'Inna Fomichova',
+              name: 'Frontend Developer Inna Fomichova',
               telephone: '+380978808048',
-              email: 'innula3113@gmail.com',
+              email: 'innula3112@gmail.com',
               address: {
                 '@type': 'PostalAddress',
                 addressLocality: 'Kryvyi Rih, Ukraine'

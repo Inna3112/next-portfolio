@@ -9,6 +9,12 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <Script
+            id="dataLayer"
+            dangerouslySetInnerHTML={{
+              __html: 'window.dataLayer = window.dataLayer || [];'
+            }}
+          />
+          <Script
             id="gtm"
             strategy="lazyOnload"
             dangerouslySetInnerHTML={{

@@ -11,7 +11,7 @@ function Button({ title, href, projectId }) {
       rel="noreferrer"
       className={s.button}
     >
-      <span className={s.button}>{title}</span>
+      <span id={projectId} className={s.button}>{title}</span>
     </Link>
   );
 }

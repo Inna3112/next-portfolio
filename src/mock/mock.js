@@ -78,12 +78,23 @@ export const state = {
     }
   ],
   contacts: [
-    { image: gitIcon, imgAlt: 'git', link: 'https://github.com/Inna3112' },
-    { image: InstIcon, imgAlt: 'inst', link: 'https://www.instagram.com/innafomichova/' },
-    { image: linkedIcon, imgAlt: 'in', link: 'https://www.linkedin.com/in/inna-fomichova-466093214/' },
-    { image: telegaIcon, imgAlt: 'telegram', link: 'https://t.me/InnaFSS' },
-    { image: codeIcon, imgAlt: 'codewars', link: 'https://www.codewars.com/users/Inna3112' },
+    {
+      id: 1, image: gitIcon, imgAlt: 'git', link: 'https://github.com/Inna3112'
+    },
+    {
+      id: 2, image: InstIcon, imgAlt: 'inst', link: 'https://www.instagram.com/innafomichova/'
+    },
+    {
+      id: 3, image: linkedIcon, imgAlt: 'in', link: 'https://www.linkedin.com/in/inna-fomichova-466093214/'
+    },
+    {
+      id: 4, image: telegaIcon, imgAlt: 'telegram', link: 'https://t.me/InnaFSS'
+    },
+    {
+      id: 5, image: codeIcon, imgAlt: 'codewars', link: 'https://www.codewars.com/users/Inna3112'
+    },
   ],
+
   formInfoItems: [
     { image: mail, imgAlt: 'mail', description: 'innula3113@gmail.com' },
     { image: location, imgAlt: 'location', description: 'Kryvyi Rih, Ukraine' },

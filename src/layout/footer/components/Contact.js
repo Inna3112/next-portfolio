@@ -3,9 +3,11 @@ import Link from 'next/link';
 import Image from 'next/image';
 import s from '../sass/Contact.module.scss';
 
-function Contact({ link, image, imgAlt }) {
+function Contact({
+  id, link, image, imgAlt
+}) {
   return (
-    <Link href={link} target="_blank" rel="noreferrer" prefetch={false}>
+    <Link id={id} href={link} target="_blank" rel="noreferrer" prefetch={false}>
       <a className={s.contact}>
         <Image
           src={image}
@@ -19,6 +21,7 @@ function Contact({ link, image, imgAlt }) {
 }
 
 Contact.propTypes = {
+  id: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   imgAlt: PropTypes.string.isRequired,

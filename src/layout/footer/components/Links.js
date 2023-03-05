@@ -10,6 +10,7 @@ function Links({ contacts }) {
           image={el.image}
           imgAlt={el.imgAlt}
           link={el.link}
+          id={el.id}
         />
       ))}
     </div>

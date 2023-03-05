@@ -5,13 +5,12 @@ import s from './Button.module.scss';
 function Button({ title, href, projectId }) {
   return (
     <Link
-      id={projectId}
       href={href}
       target="_blank"
       rel="noreferrer"
       className={s.button}
     >
-      <span className={s.button}>{title}</span>
+      <span id={projectId} className={s.button}>{title}</span>
     </Link>
   );
 }

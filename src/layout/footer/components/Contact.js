@@ -7,8 +7,8 @@ function Contact({
   id, link, image, imgAlt
 }) {
   return (
-    <Link id={id} href={link} target="_blank" rel="noreferrer" prefetch={false}>
-      <a className={s.contact}>
+    <Link href={link} target="_blank" rel="noreferrer" prefetch={false}>
+      <a id={id} className={s.contact}>
         <Image
           src={image}
           alt={imgAlt}

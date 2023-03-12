@@ -21,7 +21,7 @@ function Contact({
 }
 
 Contact.propTypes = {
-  id: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
   link: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   imgAlt: PropTypes.string.isRequired,
